@@ -1,0 +1,48 @@
+.content-height-18em{
+    height: 18em;
+}
+.content-height-1em{
+    height: 1em;
+}
+.amount-dollar-heading{
+    font-size: x-large ;
+    padding-top: 1em;
+}
+.name-card-header{
+    font-size: 12px;
+    margin-left: -14px
+}
+.image-header{
+    height: 70px;
+}
+.image-header img:first-child{
+    width: 52px;
+    margin-right: 8%;
+    margin-top: 10px;
+}
+.image-header img:first-child ~ img{
+    width: 90px;
+    margin-right: 6%;
+}
+.image-header img:first-child ~ img ~ img{
+    width: 100px;
+}
+.modal-image-header{
+    padding-right: 5em;
+    background-color: white;
+    height: 40px;
+}
+.modal-image-header div > img{
+    width: 23px;
+    float: right;
+}
+.modal-image-header div ~ div{
+    padding-top: 8px;
+    color: yellowgreen;
+}
+.headerBar{
+    background: transparent;
+    border: none;
+}
+
+

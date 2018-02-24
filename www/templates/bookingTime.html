@@ -1,0 +1,10 @@
+<ion-view view-title="Where is your house" hide-nav-bar='true'>
+    <ion-content class='booking-postcode'>
+        <div ng-repeat="time in availableTimes">
+            <span ng-click="selectTime(time)" ng-class="{ active: step.time === time }">{{time}}</span>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>
+</ion-view>

@@ -1,0 +1,36 @@
+.recurring-p-first-child{
+    margin-top: 8px !important;
+}
+.recurring-header-p{
+
+    margin-left: 20% !important;
+    font-size: 11px !important;
+}
+.edit-button-header > div > img{
+    width: 2em;
+}
+.edit-button-header span{
+    margin-right: 7px !important;
+}
+.edit-button-header span > button{
+    background-color: #8A8585;
+    color: #FFFCFC;
+    font-weight: 300;
+    width: 5em;
+    margin-left: 15%;
+    height: 6px;
+}
+.bottom-buttons > button:first-child{
+    border: none;
+    background-color: #ff4700 !important;
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+}
+.bottom-buttons > button:first-child ~ button{
+    border: none;
+    color: black;
+    background-color: $theme-yellowish-color;
+    font-size: 12px;
+    font-weight: 300;
+}

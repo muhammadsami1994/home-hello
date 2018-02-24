@@ -1,0 +1,43 @@
+<ion-view view-title="MESSAGES" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <div class="sidemenu-icon-position">
+            <i class="icon ion-navicon" ng-click="toggleLeft()"></i>
+        </div>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <div class="row height-4em padding-top-5percent">
+            <div class="col blue-text-color padding-top-2percent padding-left-3percent">Display total 6 messages</div>
+        </div>
+        <div class="viewBackground margin-top-2" ng-repeat="messages in messages">
+            <div class="row height-5em padding-top-0">
+                <div class="col col-20 del-icon" ng-show="messages.del">
+                    <i class="icon ion-ios-trash-outline font-white-color"></i>
+                </div>
+                <div class="col" ng-click="showDel($index)">
+                    <div class="row height-2dot5em">
+                        <div class="col theme-font-grey-color"><p class="text-wrap">{{messages.message}}</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="circleBase type2 margin-top-0dot4em margin-left-2-percent" ng-show="$index == 0 || $index == 2 || $index == 4">
+                            <i class="icon ion-person theme-light-grey-color"></i>
+                        </div>
+                        <div class="col col-10 person-icon-img1 padding-top-1percent margin-left--1percent" ng-hide="$index == 0 || $index == 2 || $index == 4">
+                            <i class=" col col-10 icon ion-record padding-top-0">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col font-smalller font-light-grey font-size-11">{{messages.name}}-{{messages.time}}</div>
+                        <div class="col col-10" ng-hide="messages.del">
+                            <div class="row">
+                                <div class="message-status-bar" ng-class="{'message-status-bar-color-unread':messages.status=='Unread','message-status-bar-color-read':messages.status=='Read'}">
+                                    <p ng-class="{'status-message-read':messages.status=='Read','status-message-unread':messages.status=='Unread'}">{{messages.status}}</p>
+                                </div>
+                            </div>
+                            <div class="row"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+  </ion-view>

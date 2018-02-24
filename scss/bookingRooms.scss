@@ -1,0 +1,44 @@
+.content-rooms{
+    width: -webkit-max-content;
+    width: max-content;
+}
+.item-rooms{
+    float: left !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+.item-rooms .activated{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.font-yellow{
+    color: #ffff00;
+}
+.slid-box-border{
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 25px;
+    border: 2px solid #aae029;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 143px;
+    left: 9.7em;
+    z-index: 99;
+}
+.slid-box-border-bath{
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 25px;
+    border: 2px solid #aae029;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 288px;
+    left: 9.7em;
+    z-index: 99;
+}
+.slid-box-text{
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}

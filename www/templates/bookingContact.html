@@ -1,0 +1,49 @@
+<ion-view view-title="CONTACT" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="bookingAddress">
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-10dot5em">
+        <div class="row no-padding">
+            <span class="col no-padding text-center font-color-grey font-family-cursive">Your contact</span>
+        </div>
+        <div class="viewBackground height-11em">
+            <div class="row">
+                <div class="col col-10 list padding-left-0">
+                    <label class="item border-none iconDiary padding-left-6">
+                        <span><img src="img/diary.png" class="width-18 height-18"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-top-8  padding-left-6">
+                        <span><img src="img/at.png" class="width-18 height-18"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-top-4  padding-left-6 background-color-none">
+                        <span><img src="img/phone.png" class="width-18 height-22"></span>
+                    </label>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input border-top-none border-LR-none">
+                            <span class="input-label placeholder-grey-color font-size-12 margin-left--5percent">Name</span>
+                            <input class="textFont" type="text">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">Email</span>
+                            <input class="textFont" type="text">
+                        </label>
+                        <label class="item item-input border-LR-none border-bottom-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">Phone number</span>
+                            <input class="textFont" type="text">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+   <!-- <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingHowOften">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

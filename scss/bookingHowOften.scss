@@ -1,0 +1,25 @@
+.checkbox-balanced input:before, .checkbox-balanced .checkbox-icon:before {
+    border-color: #ddd !important;
+}
+.checkbox-balanced input:checked:before, .checkbox-balanced input:checked + .checkbox-icon:before{
+    border: none !important;
+}
+.checkbox-balanced input:checked:before, .checkbox-balanced input:checked + .checkbox-icon:before{
+    background: $theme-green-color;
+}
+.font-size-small span{
+    font-size: small;
+    color: $font-grey-color;
+}
+.blue-color-text{
+    display: block;
+    font-size: 9px !important;
+    color: #56C2DC !important;
+}
+.howOften{
+
+}
+.howOften.activated{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}

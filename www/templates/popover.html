@@ -1,0 +1,22 @@
+<ion-popover-view class="popover-custom">
+    <ion-content scroll="false">
+        <div class="row">
+            <div class="col popup-border-right"  ng-click="isFlippedFunc(false);popover.hide();">
+                <img ng-src="{{upcomingImagePath}}">
+                <p ng-class="{'popup-paragraph':bookingHeading == 'UPCOMING BOOKING','past-popup-paragraph':bookingHeading == 'PAST BOOKING'}">UPCOMING</p>
+                <p>BOOKINGS</p>
+            </div>
+            <div class="col">
+                <div class="row minus-margin-top-6" ng-click="isFlippedFunc(true);popover.hide();">
+                    <div class="col-67">
+                        <p ng-class="{'pastpopup-past-paragraph':bookingHeading == 'PAST BOOKING','popup-past-paragraph':bookingHeading == 'UPCOMING BOOKING'}">PAST</p>
+                        <p>BOOKINGS</p>
+                    </div>
+                    <div class="col minus-margin-top-3 front">
+                        <img ng-src="{{pastImagePath}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-popover-view>

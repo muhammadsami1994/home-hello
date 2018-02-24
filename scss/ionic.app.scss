@@ -1,0 +1,52 @@
+//Custom colors variables
+
+$background-theme-grey: rgba(236, 232, 232, 0.94) !important;
+$theme-font-color: #1981A9 !important;
+$theme-green-color: rgba(196, 221, 17, 0.8) !important;
+$theme-next-button-green: rgba(117, 165, 17, 0.66) !important;
+$theme-gray-color: #aaa !important;
+$nav-bar-color: rgb(255, 252, 252);
+$placeholder-grey-color: #d2cfd2 !important;
+$font-grey-color: #767676;
+$theme-yellowGreen-color : #96d225 !important;
+$theme-yellowish-color : #fef55a !important;
+$color-cornblue : cornflowerblue !important;
+$font-light-grey : rgba(181, 181, 181, 0.78) !important;
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import "calenderDirective";
+
+// Application File
+@import
+"common",
+"home",
+"registerPostcode",
+"registerPlace",
+"bookingExtra",
+"bookingCleanPet",
+"bookingAddress",
+"bookingContact",
+"bookingHowOften",
+"bookingSelectStartTime",
+"bookingPayment",
+"dashboard",
+"bookings",
+"review",
+"allReview",
+"reviewDetails",
+"incompleteReview",
+"writeAReview",
+"messages",
+"account",
+"recurringDetails",
+"payment",
+"bookingDate",
+"referralPage",
+"recurringDetails",
+"incompleteReviewPage2",
+"bookingRegister",
+"bookingDetails",
+"bookingRooms";

@@ -1,0 +1,145 @@
+<ion-view view-title="YOUR HOME" hide-nav-bar="false">
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="booking">
+    </ion-nav-buttons>
+    <ion-content class="background-grey-theme">
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-2dot5em">
+        <div class="row">
+            <p class="col font-family-cursive font-color-grey text-center">Tell us about your place</p>
+        </div>
+        <!--<div class="white-box-swipe">
+            <div class="col margin-center margin-top-03em">
+                <img src="img/bedroom-icon.gif">
+            </div>
+            <div class="col margin-left-37 margin-top-07em">
+                <p class="font-color-grey font-family-cursive">Bedroom(s)</p>
+            </div>
+            <div>
+                <tab-slide-box>
+                    <div class="tsb-icons">
+                        <div class="tsb-ic-wrp">
+                            <a>1</a>
+                            <a>2</a>
+                            <a>3</a>
+                            <a>4</a>
+                            <a>5</a>
+                            <a>6</a>
+                            <a>7</a>
+                        </div>
+                    </div>
+                    <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+
+                    </ion-slide-box>
+                </tab-slide-box>
+            </div>
+        </div>-->
+
+        <!--<div class="white-box-swipe">
+            <div class="col margin-center margin-top-03em">
+                <img src="img/bathroom-icon.gif">
+            </div>
+            <div class="col margin-left-37 margin-top-07em">
+                <p class="font-color-grey font-family-cursive">Bathroom(s)</p>
+            </div>
+            <div>
+                <tabs-slide-box>
+                    <div class="tsb-icons">
+                        <div class="tsb-ic-wrp">
+                            <a>1</a>
+                            <a>2</a>
+                            <a>3</a>
+                            <a>4</a>
+                            <a>5</a>
+                            <a>6</a>
+                            <a>7</a>
+                        </div>
+                    </div>
+                    <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+                        <ion-slide>
+
+                        </ion-slide>
+
+                    </ion-slide-box>
+                </tabs-slide-box>
+            </div>
+        </div>-->
+        <div class="white-box-swipe">
+            <div class="col margin-center margin-top-03em">
+                <img src="img/bathroom-icon.gif">
+            </div>
+            <div class="col margin-left-37 margin-top-07em">
+                <p class="font-color-grey font-family-cursive">Bedroom(s)</p>
+            </div>
+            <div class="slid-box-border">
+            </div>
+            <ion-scroll delegate-handle="mainScroll" class="ionScrollRegion" direction="x" style="width: 22.5em;margin-left: 2px;">
+                <div class="content-rooms" data-tap-disabled="true">
+                    <div class="item item-rooms" on-tap="scrollMainToTop($index,item.data)" on-double-tap="onGesture('Double-Tap')" ng-repeat="item in items" style="width: 3em;border: none" ng-click="">
+                        <p class="font-weight-300" ng-class="{'slid-box-text':selectedIndex1 == item.data}">{{item.data}}</p>
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+        <div class="white-box-swipe">
+            <div class="col margin-center margin-top-03em">
+                <img src="img/bedroom-icon.gif">
+            </div>
+            <div class="col margin-left-37 margin-top-07em">
+                <p class="font-color-grey font-family-cursive">Bathroom(s)</p>
+            </div>
+            <div class="slid-box-border-bath">
+            </div>
+            <ion-scroll delegate-handle="mainScroll2" class="ionScrollRegion" direction="x" style="width: 22.5em;margin-left: 2px;">
+                <div class="content-rooms" data-tap-disabled="true">
+                    <div class="item item-rooms" on-tap="scrollMainToTopBath($index,item.data)" on-double-tap="onGesture('Double-Tap')" ng-repeat="item in items" style="width: 3em;border: none" ng-click="">
+                        <p class="font-weight-300" ng-class="{'slid-box-text':selectedIndex == item.data}">{{item.data}}</p>
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+    </ion-content>
+
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingExtra">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

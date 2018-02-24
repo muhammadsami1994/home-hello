@@ -1,0 +1,20 @@
+.icon-center-text{
+    margin-left: -18px;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    padding-top: 3px;
+}
+.circle-icon-image{
+    width: 0.5em;
+    z-index: 9999999999;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 4px;
+}
+.edit-button{
+    background-color: darkgray;color: #ffffff;font-weight: 300;;width: 3em;height: 6px;
+}
+.color-cornblue{
+    color: $color-cornblue;
+}

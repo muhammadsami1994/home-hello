@@ -1,0 +1,20 @@
+<ion-view hide-nav-bar='true'>
+    <ion-content style="background-image: url('img/postcodeBackground.png'); background-repeat: no-repeat">
+        <div class="row registerPostcode-header">
+            <div class="col col-10" ui-sref="home">
+                <img src="img/grey-back-arrow.gif"/>
+            </div>
+            <p class="col col-90 font-family-cursive">WHERE IS YOUR HOUSE?</p>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Postcode" class="col col-50 col-offset-33 postcode-textbox" ng-model="step.postcode" />
+        </div>
+    </ion-content>
+
+   <!-- <ion-footer-bar align-title="center" class="registerPostcode-footer" ng-class="{ 'disabled': !isValidStep }" ng-click="next()">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingRooms">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

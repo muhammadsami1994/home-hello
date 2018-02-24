@@ -1,0 +1,44 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-stable">
+        <h1 class="title">SETTINGS</h1>
+        <div class="sidemenu-icon-position">
+            <!--<i class="icon ion-navicon" ng-click="toggleLeft()"></i>-->
+            <i class="icon ion-navicon" ng-click="changeState('dashboard')"></i>
+        </div>
+    </ion-header-bar>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <div class="margin-top-06px">
+            <div class="row viewBackground" ng-click="changeState('account')">
+                <div class="col col-10"><img class="width-1em" src="img/accountDetails.png"></div>
+                <div class="col col-80 theme-font-grey-color font-size-12">Account details</div>
+                <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+            </div>
+            <div class="height-7"></div>
+            <div class="row viewBackground" ng-click="changeState('security')">
+                <div class="col col-10"><img class="width-1em" src="img/security.png"></div>
+                <div class="col col-80 theme-font-grey-color font-size-12">Security</div>
+                <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+            </div>
+            <div class="height-7"></div>
+            <div class="row viewBackground" ng-click="changeState('payment')">
+                <div class="col col-10"><img class="width-1em" src="img/paymentDetailsWithHand.png"></div>
+                <div class="col col-80 theme-font-grey-color font-size-12">Payment details</div>
+                <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+            </div>
+            <div class="height-7"></div>
+            <div class="row viewBackground" ng-click="changeState('notification')">
+                <div class="col col-10"><img class="width-1em" src="img/notifications.png"></div>
+                <div class="col col-80 theme-font-grey-color font-size-12">Notifications</div>
+                <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+            </div>
+            <div class="height-7"></div>
+            <div class="row viewBackground">
+                <div class="col col-10"><img class="width-1em" src="img/termsAndConditions.png"></div>
+                <div class="col col-80 theme-font-grey-color font-size-12">Terms and Conditions</div>
+                <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>
+

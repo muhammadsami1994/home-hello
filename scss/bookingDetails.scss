@@ -1,0 +1,75 @@
+.z-index-9999{
+    z-index: 9999;
+}
+.bar.bar-stable .title {
+    margin-left: 20% !important;
+}
+.booking-stop-icon{
+    font-size: 29px;
+    margin-left: -12px;
+    margin-top: 4px;
+    position: absolute;
+}
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 37px solid transparent;
+    border-right: 55px solid transparent;
+    border-top: 50px solid #2FBCF0;
+    position: fixed;
+    margin-top: -19.6%;
+    z-index: 9999;
+    margin-left: 40.5%;
+}
+.triangle-text{
+    font-size: 10px;
+    position: absolute;
+    width: 5em;
+    margin-top: -4.8em;
+    margin-left: -2em;
+    color: white;
+}
+.triangle-clock{
+    margin-top: -2.3em;
+    margin-left: -0.2em;
+    color: white;
+}
+.stop-icon-img{
+    width: 0.5em;
+    position: absolute;
+    margin-left: -80%;
+    margin-top: 6px;
+}
+#booking-topleft {
+    width: 0;
+    height: 0;
+    border-top: 57px solid #fffcfc;
+    border-right: 63px solid transparent;
+}
+#booking-topleft > p:first-child{
+    margin-top: -42px;
+    margin-left: 1em;
+    font-size: 13px;
+}
+#booking-topleft > p{
+    margin-top: -1em;
+    margin-left: 1.1em;
+    font-size: 10px;
+}
+#booking-bottom-sub-right {
+    border-bottom: 56px solid #1fafe4;
+    height: 0;
+    width: 13em;
+    float: right;
+    margin-right: 5px;
+    margin-top: -71.5px;
+}
+#booking-bottom-sub-right > p:first-child{
+    margin-top: 21px;
+    font-size: 13px;
+}
+#booking-bottom-sub-right > p{
+    margin-top: -10px;
+    margin-left: 45%;
+    font-size: 10px;
+}

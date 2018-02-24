@@ -1,0 +1,26 @@
+<ion-view view-title="REVIEW" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <div class="sidemenu-icon-position">
+            <i class="icon ion-navicon" ng-click="toggleLeft()"></i>
+        </div>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <div class="row height-4em padding-top-15">
+            <div class="col col-10"><i class="icon ion-ios-star padding-top-1 blue-text-color font-size-20"></i></div>
+            <div class="col blue-text-color padding-top-6 padding-left-8">All Review</div>
+        </div>
+        <div class="row viewBackground margin-top-2" ui-sref="allReview">
+            <div class="col col-90 theme-font-grey-color font-size-12">You made 38 reviews</div>
+            <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+        </div>
+        <div class="row height-4em padding-top-15">
+            <div class="col col-10"><i class="icon ion-ios-star-outline padding-top-1 blue-text-color font-size-20"></i></div>
+            <div class="col blue-text-color padding-top-11 padding-top-6 padding-left-8">Unfinished reviews</div>
+        </div>
+        <div class="row viewBackground margin-top-2" ui-sref="incompleteReview">
+            <div class="col col-90 theme-font-grey-color font-size-12">You have 2 incomplete reviews</div>
+            <div class="col"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+        </div>
+    </ion-content>
+  </ion-view>

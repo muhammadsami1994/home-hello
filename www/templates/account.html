@@ -1,0 +1,81 @@
+<ion-view view-title="ACCOUNT" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ng-click="openModal()">
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <i class="header-save-button">Save</i>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+               <div class="row no-padding">
+            <span class="col no-padding font-color-grey font-family-cursive">Your contact</span>
+        </div>
+        <div class="viewBackground">
+            <div class="row height-149">
+                <div class="col col-10 list padding-left-0">
+                    <label class="item border-none iconDiary padding-left-6">
+                        <span><img src="img/diary.png" class="width-18 height-18"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-top-8  padding-left-6">
+                        <span><img src="img/at.png" class="width-18 height-18"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-top-4 padding-left-6 height-2dot5em">
+                        <span><img src="img/phone.png" class="width-18 height-22"></span>
+                    </label>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input border-top-none border-LR-none">
+                            <input class="textFont theme-font-grey-color" ng-model="name" type="text" style="color: #d2cfd2 !important">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <input class="textFont theme-font-grey-color" ng-model="email"  type="text" style="color: #d2cfd2 !important">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <input class="textFont theme-font-grey-color"  ng-model="phone" type="text" style="color: #d2cfd2 !important">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-padding">
+            <span class="col no-padding font-color-grey font-family-cursive">Your address</span>
+        </div>
+        <div class="viewBackground">
+            <div class="row height-200">
+                <div class="col col-10 list location-outline-pad-left">
+                    <label class="item locationMark border-none">
+                        <span><i class="icon ion-ios-location-outline"></i></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-left-6">
+                        <!--<span><img src="img/locationMark.png" style="width: 18px;height: 18px;"></span>-->
+                        <span><img src="img/locationMark.png" class="iconsSize"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-left-6">
+                        <span><img src="img/mapMark.png" class="iconsSize"></span>
+                    </label>
+                    <label class="item locateIcon border-none">
+                        <span><i class="icon ion-android-locate" style="opacity: 0.7"></i></span>
+                    </label>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input border-LR-none border-top-none">
+                            <input class="font-size-12 theme-font-grey-color"  ng-model="streetAddress"  type="text" style="color: #d2cfd2 !important">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <input class="font-size-12 theme-font-grey-color"  ng-model="suburb" type="text" style="color: #d2cfd2 !important">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <input class="font-size-12 theme-font-grey-color" ng-model="state"  type="text" style="color: #d2cfd2 !important">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <input class="font-size-12 theme-font-grey-color" ng-model="postCode"  type="text" style="color: #d2cfd2 !important">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+   </ion-view>

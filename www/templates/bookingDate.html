@@ -1,0 +1,29 @@
+<ion-view view-title="DATE" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="bookingHowOften">
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-16em">
+        <div class="row no-padding">
+            <span class="col no-padding text-center font-color-grey font-family-cursive">Select a date</span>
+        </div>
+        <div class="wrapp">
+            <flex-calendar options="options" events="events"></flex-calendar>
+        </div>
+        <div class="row">
+        <div class="margin-top-20 margin-left-10">
+        <img class="width-2dot5em" src="img/CalendarDisabledKey.png">
+        </div>
+            <div class="col col-50 padding-left-19">
+        <p class="calendar-text-key">All booked</p>
+            </div>
+        </div>
+    </ion-content>
+  <!--  <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingSelectStartTime">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

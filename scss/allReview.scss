@@ -1,0 +1,33 @@
+.color-oragered{
+    color: rgba(230, 71, 99, 0.93);
+}
+.notification-number{
+    margin-left: -14px;
+    font-size: 13px;
+    color: #F1EDED !important;
+    position: fixed;
+    margin-top: 2px;
+}
+.date-color{
+    color:rgba(160, 149, 149, 0.61) !important;
+}
+.text-ellipses{
+    display: inline-block;
+    width: 78%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin-left: 2%;
+    margin-top: 4px;
+}
+.arrow-align-right{
+    font-size: 18px;
+    margin-left: 50%;
+}
+.square-icon-text{
+    margin-left: -13px;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    padding-top: 3px;
+}

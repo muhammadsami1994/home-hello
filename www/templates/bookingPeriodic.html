@@ -1,0 +1,10 @@
+<ion-view view-title="Where is your house" hide-nav-bar='true'>
+    <ion-content class='booking-postcode'>
+        <span ng-repeat="(id, price) in pricing">
+            <input type="radio" ng-model="step.periodic" value="{{id}}" /> {{price.description}} {{price.client_price}}$ <br />
+        </span>
+    </ion-content>
+    <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>
+</ion-view>

@@ -1,0 +1,200 @@
+.font-color-green{
+    color: #BEE86B !important;
+}
+.numberCircle {
+    border-radius: 50%;
+    max-width: 21px;
+    height: 20px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+    font: 12px Arial, sans-serif;
+    background-color: #3493F1;
+    margin-top: 16px;
+    margin-left: 8px;
+}
+.calendar-logo > img{
+    width: 18px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.popover-backdrop.active {
+    background-color: rgba(152, 68, 68, 0) !important;
+}
+.popup-paragraph{
+    margin-top: -2.9em;
+    font-size: 13px;
+    margin-left: 47px;
+    color: #7bbaca !important;
+}
+.popup-paragraph ~ p{
+    margin-top: -12px;
+    margin-left: 47px;
+    font-size: 13px;
+    color: #7bbaca !important;
+}
+.popup-border-right{
+    border-right: rgba(128, 128, 128, 0.3) 1px solid;
+}
+.popup-border-right > img{
+    width: 32px;
+}
+.popup-past-paragraph{
+    margin-top: 1px;
+    margin-left: 25%;
+    color: rgb(51, 49, 49) !important;
+    font-size: 13px;
+}
+.popup-past-paragraph ~ p{
+    margin-top: -12px;
+    margin-left: 8%;
+    font-size: 13px;
+    color: rgb(51, 49, 49) !important;
+}
+.minus-margin-top-3 > img{
+    width: 32px;
+}
+.popover-custom{
+    width: 96%;
+    height: 68px;
+    left: 7px;
+    border-radius: 0 !important;
+    top: 0% !important;
+    margin-top: 15% !important;
+}
+.platform-ios .popover-arrow {
+    position: absolute;
+    display: block;
+    top: -17px;
+    width: 30px;
+    height: 19px;
+    overflow: hidden;
+    left: 91.5% !important;
+}
+.recurring-heading{
+    height: 3.8em;
+    padding-top: 15px;
+}
+.recurring-heading > div > i{
+    font-size: 20px;
+}
+.recurring-heading div ~ div{
+    padding-left: 8px;
+    padding-top: 6px;
+}
+.image-width-20 img{
+    width: 20px;
+}
+.image-width-20 ~ div{
+    padding-left: 8px;
+    padding-top: 6px;
+}
+.person-icon-img i{
+    color: cornflowerblue;
+    font-size: 28px;
+    padding-top: 10px;
+}
+.person-icon-img i > img{
+    width: 0.5em;
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 4px;
+}
+.div-gap-margin{
+    height: 3.5em;
+    margin-bottom: 7px;
+}
+.loading-more-button{
+    background-color: darkgray !important;
+    color: #ffffff !important;
+    font-weight: 300;
+}
+/*For flip card*/
+.flip {
+    -webkit-perspective: 800;
+
+}
+.flip .cards.flipped {
+    -webkit-transform: rotatey(-180deg);
+}
+.flip .cards {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.2s;
+}
+.flip .cards .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.flip .cards .front {
+
+}
+.flip .cards .back {
+    -webkit-transform: rotatey(-180deg);
+    background: blue;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.hideCard{
+    -webkit-backface-visibility: hidden ;
+}
+.calendar-header img{
+    width: 35px;
+    margin-left: 4%;
+}
+.calendar-header img ~ div ~ img{
+    width: 35px;
+    margin-left: 8%;
+}
+.calendar-header div{
+    padding-top: 6px;
+    margin-left: -20px;
+    text-align: center;
+    padding-left: 41px;
+    font-size: 17px;
+}
+.pastbooking-list{
+    height: 3.5em;
+    margin-top: 14px
+}
+.pastbooking-list > div:first-child{
+    border-left: rgba(146, 143, 143, 0.33) solid 3px;
+    height: 42px;
+    margin-top: 3px;
+    line-height: 15px;
+}
+.margin-top-20px{
+    margin-top: 20px !important;
+}
+.past-popup-paragraph{
+    margin-top: -2.9em;
+    font-size: 13px;
+    margin-left: 47px;
+    color: rgb(51, 49, 49) !important;
+}
+.past-popup-paragraph ~ p{
+    margin-top: -12px;
+    margin-left: 47px;
+    font-size: 13px;
+    color: rgb(51, 49, 49) !important;
+}
+.past-popup-border-right{
+    border-right: rgba(128, 128, 128, 0.3) 1px solid;
+}
+.past-popup-border-right > img{
+    width: 32px;
+}
+.pastpopup-past-paragraph{
+    margin-top: 1px;
+    margin-left: 25%;
+    color: #7bbaca !important;
+    font-size: 13px;
+}
+.pastpopup-past-paragraph ~ p{
+    margin-top: -12px;
+    margin-left: 8%;
+    font-size: 13px;
+    color: #7bbaca !important;
+}

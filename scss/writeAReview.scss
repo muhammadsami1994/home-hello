@@ -1,0 +1,80 @@
+.detail-button-span {
+    padding-top: 14px;
+    margin-left: -22px;
+}
+.detail-button {
+    background-color: #848080;
+    color: #ffffff;
+    font-weight: 100;
+    width: 4em;
+    height: 0px;
+}
+.font-size-11{
+    font-size: 11px;
+}
+.ratingStar{
+    background-color: #FBFB00 !important;
+    color: #FBFB00 !important;
+    display: inline-block;
+    width: 22px;
+}
+.ratingFalse{
+    background-color: #ffffff !important;
+    color: #ffffff !important;
+    display: inline-block;
+    width: 22px;
+}
+.rating-index-9{
+    border: 1px dashed;
+    border-color: grey;
+    margin-left: -3px;
+}
+.rating-index-9-width{
+    width: 18px !important;
+}
+.stop-icon{
+    border: 1px dashed;
+    border-right: none;
+    border-color: grey;
+    margin-left: -3px;
+}
+.margin-left--11{
+    margin-left: -11px !important;
+}
+.rating-text{
+    margin-left: -7px;
+    font-size: 13px;
+    position: absolute;
+    padding-top: 1px;
+}
+.rating-text-color-true{
+    color: darkgrey;
+}
+.rating-text-color-false{
+    color: #000000;
+}
+.toggle.toggle-calm input:checked + .track{
+    border-color: #72E472 !important;
+    background-color: #72E472 !important;
+}
+.toggle .track {
+    height: 27px;
+}
+.toggle .handle {
+    height: 24px;
+    margin-top: -0.5px;
+}
+.toogle-class{
+    margin-right: 2px; margin-top: 0px;
+}
+.circle-big-icon-image{
+    width: 0.5em;
+    z-index: 9999999999;
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 6px;
+}
+::-webkit-input-placeholder {
+    color: rgba(70, 69, 69, 0.75) !important;
+    text-align: left !important;
+}

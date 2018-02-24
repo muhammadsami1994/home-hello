@@ -1,0 +1,110 @@
+.padding-left-0{
+    padding-left: 0px;
+}
+.border-none{
+    border: none;
+}
+.iconDiary{
+    padding-top: 13px;
+}
+.blue-text-color{
+    color : rgb(123, 186, 202) !important;
+}
+.font-size-12{
+    font-size: 12px;
+}
+.avatar{
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -5px;
+    margin-left: 5px;
+    border-radius: 54%;
+    border: solid;
+    border-color: #ffffff;
+}
+.height-2em{
+    height: 2.7em !important;
+}
+.height-2halfem{
+    height: 2.5em !important;
+}
+.height-4em{
+    height: 3.7em !important;
+}
+.dashboard-heading{
+    padding-left: 8px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.dashboard-white-bar{
+    padding-top: 6px !important;
+    margin-bottom: 8px;
+}
+.margin-left-2{
+    margin-left:2%;
+}
+.margin-left-minus4{
+    margin-left: -4px;
+}
+.box {
+    background:#999;
+    position:relative;
+    margin-top:10px;
+}
+.box:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 0;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(70, 193, 9, 0.25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, .15), rgba(70, 193, 9, 0.25)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(70, 193, 9, 0.25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    -webkit-background-origin: border-box;
+    -moz-background-origin: border;
+    background-origin: border-box;
+}
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 57px solid #fffcfc;
+    border-right: 65px solid transparent;
+}
+#triangle-topleft > p:first-child{
+    margin-top: -4.7em;
+    margin-left: 1em;
+    font-size: 11px;
+
+}
+#triangle-topleft > p{
+    margin-top: -1em;
+    margin-left: 1.1em;
+    font-size: 10px;
+}
+#triangle-bottomright {
+    border-bottom: 56px solid rgba(73, 212, 87, 0.98);
+    height: 0;
+    width: 13em;
+    float: right;
+    margin-right: 5px;
+    margin-top: -5.1em;
+}
+#triangle-bottomright > p:first-child{
+    margin-top: 1em;
+    font-size: 11px;
+    width: 30% !important;
+}
+#triangle-bottomright > p{
+    margin-top: 30px;
+    margin-left: -9em;
+    font-size: 10px;
+    width: 60% !important;
+}
+.review-message{
+    color: crimson;
+}

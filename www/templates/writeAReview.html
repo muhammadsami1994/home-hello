@@ -1,0 +1,62 @@
+<ion-view view-title="WRITE A REVIEW" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <div>
+            <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="incompleteReview">
+        </div>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <div class="row height-4em">
+            <div class="col col-10 padding-left-0">
+                <i class=" col col-10 icon ion-record color-cornblue font-size-40">
+                    <img class="circle-big-icon-image" src="img/photo.png"></i>
+            </div>
+            <div class="col col-80 padding-left-6">
+                <div class="row theme-font-grey-color font-size-11">You are writing a review for the clean at</div>
+                <div class="row theme-font-grey-color font-size-11"><p class="width-20em"><b>4:00 pm on Saturday, June 06 2015 by Lina</b></p>
+                </div>
+            </div>
+            <span class="col col-10 detail-button-span">
+                <button class="button button-small detail-button">
+                    Detail
+                </button>
+            </span>
+        </div>
+        <div class="row viewBackground height-3 margin-top-1em">
+            <p class="col col-20 blue-text-color font-size-10">Unlikely</p>
+            <div class="col col-75 margin-left--20">
+                <div ng-repeat="rating in userRating track by $index"
+                     ng-class="{'ratingStar':rating, 'ratingFalse':!rating,'rating-index-9-width':$index==9}" ng-click="changeRating($index)">
+                    <i class="ion-stop"
+                       ng-class="{'ratingStar':rating,'ratingFalse':!rating,'rating-index-9':$index==9,'stop-icon':$index!=9}"><span class="rating-text" ng-class="{'margin-left--11':$index==9,'rating-text-color-true':!rating,'rating-text-color-false':rating}">{{$index+1}}</span>
+                    </i>
+                </div>
+            </div>
+            <p class="col col-20 blue-text-color font-size-10 margin-left--12 minus-margin-top-6">Extremely Likely</p>
+        </div>
+        <div class="row viewBackground height-2dot5em margin-top-7">
+            <p class="col blue-text-color font-size-11">Was the cleaner on time?</p>
+            <p class="padding-top-9 padding-right-13 theme-font-grey-color">No</p>
+            <label class="toggle toggle-calm toogle-class">
+                <input type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <p class="padding-top-9 theme-font-grey-color">Yes</p>
+        </div>
+        <div class="row height-4em padding-top-8">
+            <div class="col theme-font-grey-color padding-top-11 padding-left-8">Comment</div>
+        </div>
+        <label class="item item-input border-none">
+            <textarea class="theme-font-grey-color" placeholder="Other comment about the clean" rows="8" cols="44"></textarea>
+        </label>
+
+    </ion-content>
+    <!-- <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+         <div class="title">Next</div>
+     </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="incompleteReviewPage2">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

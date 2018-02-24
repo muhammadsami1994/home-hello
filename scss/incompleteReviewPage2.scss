@@ -1,0 +1,40 @@
+.question-mark-icon-text{
+    margin-left: -13px; font-size: 13px; color: white; position: absolute; padding-top: 3px;
+}
+.review-icon > img{
+    width: 27px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.incomplete-status-bar{
+    width: 0;
+    border-style: solid;
+    border-width: 0 178px 82px 0;
+    border-color: transparent rgba(247, 211, 23, 0.92) transparent transparent;
+    margin-top: -41px;
+    position: absolute;
+    margin-left: -61px;
+}
+.incomplete-status-message{
+    position: absolute;
+    padding-left: 41px;
+    color: white;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.thankyou-div-popup{
+    width: 22em;
+    background-color: white;
+    height: 4em;
+    margin-top: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.75);
+}
+.popup-close-button{
+    float: right;
+    color: darkgray;
+    font-size: 20px;
+    margin-top: -5px;
+}

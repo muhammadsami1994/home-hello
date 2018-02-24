@@ -1,0 +1,26 @@
+<ion-view view-title="TIME" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="bookingDate">
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-19em">
+        <div class="row no-padding">
+            <span class="col no-padding text-center theme-grey-color font-family-cursive">Select start time</span>
+        </div>
+        <div class="viewBackground">
+            <div ng-repeat="time in startTime track by $index">
+                <div class="row">
+                    <div class="col col-50 text-center" ng-class="[{'selectedTime': selectedTime== time.am}]" ng-click="selectedTimeFunc(time.am)"><span class="theme-grey-color">{{time.am}}</span></div>
+                    <div class="col col-50 text-center" ng-class="[{'selectedTime': selectedTime== time.pm}]"  ng-click="selectedTimeFunc(time.pm)"><span class="theme-grey-color">{{time.pm}}</span></div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+  <!--  <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingPayment">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

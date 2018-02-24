@@ -1,0 +1,54 @@
+<ion-view view-title="YOUR HOME" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="bookingRooms">
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode background-grey-theme'>
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-4dot5em">
+        <div class="row no-padding">
+            <span class="col no-padding text-center font-color-grey font-family-cursive">Select extra services</span>
+        </div>
+        <div class="wrapperDiv">
+            <div class="row">
+                <div class="col col-offset-10">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[0]" ng-click="clicked[0] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row padding-left-10" ng-if="!clicked[0]" ng-click="clicked[0] = true"><img class="imgSize" src="img/cabinet.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Cabinet</p>
+                </div>
+                <div class="col">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[1]" ng-click="clicked[1] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row padding-left-15" ng-if="!clicked[1]" ng-click="clicked[1] = true"><img class="imgSize" src="img/cabinet.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Washing</p>
+                </div>
+                <div class="col">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[2]" ng-click="clicked[2] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row padding-left-13" ng-if="!clicked[2]" ng-click="clicked[2] = true"><img class="imgSize" src="img/window.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Window</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-offset-10">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[3]" ng-click="clicked[3] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row padding-left-8" ng-if="!clicked[3]" ng-click="clicked[3] = true"><img class="imgSize" src="img/frig.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Fridge</p>
+                </div>
+                <div class="col">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[4]" ng-click="clicked[4] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row" ng-if="!clicked[4]" ng-click="clicked[4] = true"><img class="imgSize" src="img/oven.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Oven</p>
+                </div>
+                <div class="col">
+                    <div class="row padding-top-1dot5px" ng-if="clicked[5]" ng-click="clicked[5] = false"><img class="clickImageLogo" src="img/clickLogo.png"></div>
+                    <div class="row padding-left-10" ng-if="!clicked[5]" ng-click="clicked[5] = true"><img class="imgSize" src="img/balcony.png"></div>
+                    <p class="row font-color-grey font-family-cursive textAlign">Balcony</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <!--  <div class="bar bar-footer"  ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+          <div class="title">Next</div>
+      </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingCleanandPet">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

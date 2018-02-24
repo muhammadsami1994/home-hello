@@ -1,0 +1,63 @@
+<ion-view view-title="MY DASHBOARD" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <div class="sidemenu-icon-position">
+            <i class="icon ion-navicon" ng-click="toggleLeft()"></i>
+        </div>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+       <div ui-sref="bookingDetails">
+            <div class="row">
+                <div class="col col-66 z-index-9999" id="triangle-topleft">
+                    <p class="blue-text-color">Your next booking on</p>
+                    <p class="theme-font-grey-color">10:00am 12 August 2015</p>
+                </div>
+
+            </div>
+            <div id="triangle-bottomright">
+                <p class="padding-right-dot5em font-white float-right">Start in</p>
+                <p class="font-white float-right">4 hours : 39 minutes</p>
+            </div>
+        </div>
+
+        <div class="row height-4em">
+            <div class="col col-10"><img class="width-2em" src="img/clockCalender.png"></div>
+            <div class="col blue-text-color dashboard-heading padding-top-11">My booking</div>
+        </div>
+        <div class="row viewBackground dashboard-white-bar">
+            <div class="col col-90 theme-font-grey-color font-size-12">
+                <span class="margin-left-2">You have 2 bookings this month</span></div>
+            <div class="col" ui-sref="bookings"><i class="icon ion-chevron-right theme-font-grey-color float-right"></i></div>
+        </div>
+        <div class="row padding-top-11">
+            <div class="col col-10"><img class="width-2em" src="img/star.png"></div>
+            <div class="col blue-text-color padding-top-11 dashboard-heading">Review</div>
+        </div>
+        <div class="row viewBackground dashboard-white-bar">
+            <div class="col col-90 theme-font-grey-color font-size-12">
+                <span class="margin-left-2">You <span class="review-message">did not</span> review last clean</span>
+            </div>
+            <div class="col" ui-sref="review"><i class="icon ion-chevron-right theme-font-grey-color float-right"></i></div>
+        </div>
+        <div class="row padding-top-11">
+            <div class="col col-10"><img class="width-2em" src="img/messages.png"></div>
+            <div class="col blue-text-color padding-top-11 dashboard-heading">Messages</div>
+        </div>
+        <div class="row viewBackground dashboard-white-bar">
+            <div class="col col-90 theme-font-grey-color font-size-12">
+                <span class="margin-left-2"> You have <span class="blue-text-color">2 unread messages</span></span>
+            </div>
+            <div class="col" ui-sref="messages"><i class="icon ion-chevron-right theme-font-grey-color float-right"></i></div>
+        </div>
+        <div class="row padding-top-11">
+            <div class="col col-10"><img class="width-2em" src="img/dollar.png"></div>
+            <div class="col blue-text-color padding-top-11 dashboard-heading">Credit</div>
+        </div>
+        <div class="row viewBackground dashboard-white-bar">
+            <div class="col col-90 theme-font-grey-color font-size-12">
+                <span class="margin-left-2">You have $0.00 credit.</span>
+            </div>
+            <div class="col" ui-sref="referral"><i class="icon ion-chevron-right theme-font-grey-color float-right"></i></div>
+        </div>
+    </ion-content>
+</ion-view>

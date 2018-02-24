@@ -1,0 +1,58 @@
+<ion-view view-title="CONTACT" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <img src="img/black-back-arrow.gif" class="nav-black-button" ui-sref="bookingCleanandPet">
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <hr class="nav-bar-progress-hr width-9em">
+        <div class="row no-padding">
+            <span class="col no-padding text-center font-color-grey font-family-cursive">Your address</span>
+        </div>
+        <div class="viewBackground height-14em">
+            <div class="row">
+                <div class="col col-10 list location-outline-pad-left">
+                    <label class="item locationMark border-none">
+                        <span><i class="icon ion-ios-location-outline"></i></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-left-6">
+                        <!--<span><img src="img/locationMark.png" style="width: 18px;height: 18px;"></span>-->
+                        <span><img src="img/locationMark.png" class="iconsSize"></span>
+                    </label>
+                    <label class="item iconBorder border-none padding-left-6">
+                        <span><img src="img/mapMark.png" class="iconsSize"></span>
+                    </label>
+                    <label class="item locateIcon border-none background-color-none">
+                        <span><i class="icon ion-android-locate opacity-0dot7"></i></span>
+                    </label>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input border-LR-none border-top-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">Street Address</span>
+                            <input class="font-size-12" type="text">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">Suburb</span>
+                            <input class="font-size-12" type="text">
+                        </label>
+                        <label class="item item-input border-LR-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">State</span>
+                            <input class="font-size-12" type="text">
+                        </label>
+                        <label class="item item-input border-LR-none border-bottom-none">
+                            <span class="input-label placeholder-grey-color label-font-margin">Postcode</span>
+                            <input class="font-size-12" type="text">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+  <!--  <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>-->
+    <ion-footer-bar align-title="center" class="next-footer-green" ui-sref="bookingContact">
+        <p class="title font-family-serif">NEXT</p>
+    </ion-footer-bar>
+</ion-view>

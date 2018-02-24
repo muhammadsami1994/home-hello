@@ -1,0 +1,47 @@
+::-webkit-input-placeholder {
+    text-align: center;
+    color: $background-theme-grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    color: $background-theme-grey;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    color: $background-theme-grey;
+}
+:-ms-input-placeholder {
+    text-align: center;
+    color: $background-theme-grey;
+}
+.registerPostcode-footer{
+    background-color: $theme-green-color;
+}
+.registerPostcode-footer.disabled{
+    background-color: $theme-gray-color;
+}
+.registerPostcode-footer p {
+    color: $background-theme-grey;
+    font-weight: 100 !important;
+}
+.registerPostcode-header{
+    text-align: center;
+    margin-top: 2em;
+}
+.registerPostcode-header img{
+    width: 34px;
+    margin-left: 0.3em !important;
+}
+.registerPostcode-header p {
+    display: inline;
+    color: rgba(240, 235, 235, 1) !important;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 0.3em;
+}
+.postcode-textbox{
+    background-color: transparent;
+    border-bottom: white 1px solid !important;
+    max-width: 40% !important;
+}
+

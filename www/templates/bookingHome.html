@@ -1,0 +1,26 @@
+<ion-view view-title="Where is your house" hide-nav-bar='true'>
+    <ion-content class='booking-postcode'>
+        <div>
+            How about cleaning supply?
+            <br/>I will provide <input type="radio" ng-model="step.supply" value="0">
+            <br/>Cleaner provide <input type="radio" ng-model="step.supply" value="1">
+        </div>
+
+        <div>
+            Do you have pets?
+            <br>No <input type="checkbox" ng-model="noPets" ng-model-options="{ getterSetter: true }">
+            <span>
+            <br>Dogs <input type="checkbox" ng-model="step.pets.dogs">
+            <br>Cats <input type="checkbox" ng-model="step.pets.cats">
+            </span>
+        </div>
+
+        <div>
+            How should the cleaner get in?
+            <br><textarea ng-model="step.entry" placeholder="e.g. I will be home"></textarea>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer" ng-class="{ 'bar-balanced': isValidStep }" ng-click="next()">
+        <div class="title">Next</div>
+    </div>
+</ion-view>

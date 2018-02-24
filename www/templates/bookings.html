@@ -1,0 +1,144 @@
+<ion-view view-title="{{bookingHeading}}" hide-nav-bar='false'>
+    <ion-nav-buttons side="left">
+        <div class="sidemenu-icon-position">
+            <i class="icon ion-navicon" ng-click="toggleLeft()"></i>
+        </div>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <div class="padding-top-3 calendar-logo" ng-click="popover.show($event)">
+            <img src="img/calendarLogo.png">
+        </div>
+    </ion-nav-buttons>
+    <ion-content class='booking-postcode bookingBackground'>
+        <hr class="nav-bar-hr">
+        <div class="flip">
+            <div class="cards" ng-class="{'flipped':isFlipped}">
+                <div class="face front" ng-class="{'hideCard':isFlipped}">
+                    <div class="row recurring-heading">
+                        <div class="col col-10">
+                            <i class="icon ion-ios-loop-strong blue-text-color"></i>
+                        </div>
+                        <div class="col blue-text-color">Recurring Bookings</div>
+                    </div>
+                    <div class="row viewBackground margin-top-2" ui-sref="recurringDetails">
+                        <div class="col col-90 font-color-green font-size-12 theme-yellowGreen-color">Every 2 WEEKS at 2:00 PM on THURSDAY</div>
+                        <div class="col"><i class="icon ion-chevron-right theme-font-grey-color float-right"></i></div>
+                    </div>
+                    <div class="row height-4em padding-top-15">
+                        <div class="col col-10 image-width-20">
+                            <img src="img/mopColor.png">
+                        </div>
+                        <div class="col blue-text-color padding-top-11">Next 3 cleanings</div>
+                    </div>
+                    <div class="row viewBackground margin-top-2 div-gap-margin">
+                        <div class=" col col-10 numberCircle">
+                            <p class="margin-top-3">1</p>
+                        </div>
+                        <div class="col col-50">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png">
+                            </i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+                    </div>
+                    <div class="row viewBackground margin-top-2 div-gap-margin">
+                        <div class=" col col-10 numberCircle"><p class="margin-top-3">2</p></div>
+                        <div class="col col-50">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails">
+                            <i class="icon ion-chevron-right float-right theme-font-grey-color"></i>
+                        </div>
+                    </div>
+                    <div class="row viewBackground margin-top-2 div-gap-margin">
+                        <div class=" col col-10 numberCircle"><p class="margin-top-3">3</p></div>
+                        <div class="col col-50">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails">
+                            <i class="icon ion-chevron-right float-right theme-font-grey-color"></i>
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-top: 7px;">
+                        <button class="button button-small button-stable loading-more-button">Loading more bookings</button>
+                    </div>
+                </div>
+                <div class="face back" ng-class="{'hideCard':!isFlipped}">
+                    <div class="row height-4em padding-top-15 calendar-header">
+                        <img src="img/backArrow-booking.png">
+                        <div class="col col-66 blue-text-color">June 2015</div>
+                        <img src="img/frontArrow-booking.png">
+                    </div>
+                    <div class="row viewBackground margin-top-20px pastbooking-list margin-bottom-9">
+                        <div class="col col-66">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+                    </div>
+                    <div class="row viewBackground pastbooking-list margin-bottom-9">
+                        <div class="col col-66">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+                    </div>
+                    <div class="row viewBackground pastbooking-list margin-bottom-9">
+                        <div class="col col-66">
+                            <div class="theme-font-grey-color font-size-11">Saturday, June 06 2015</div>
+                            <div class="theme-font-grey-color font-size-11">4:00 pm</div>
+                        </div>
+                        <div class="col col-10 person-icon-img">
+                            <i class=" col col-10 icon ion-record">
+                                <img src="img/photo.png"></i>
+                        </div>
+                        <div class="col col-20 padding-top-18">
+                            <p class="theme-font-grey-color font-size-11">Lina</p>
+                        </div>
+                        <div class="col padding-top-18" ui-sref="bookingDetails"><i class="icon ion-chevron-right float-right theme-font-grey-color"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+   <!-- <script id="templates/popover.html" type="text/ng-template">
+
+    </script>-->
+</ion-view>
